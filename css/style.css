@@ -32,6 +32,7 @@
 -------------------*/
 body {
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 /*-------------------
@@ -45,6 +46,21 @@ header {
     z-index: 2;
     height: 90px;
     background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+
+header .upgrade {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: inherit;
+    font-size: 15px;
+    margin-right: 5px;
 }
 
 /*-------------------
