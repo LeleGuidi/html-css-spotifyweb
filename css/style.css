@@ -10,23 +10,23 @@
 /*-------------------
     DEBUG
 -------------------*/
-.logo {
+/* .logo {
     background-color: blue;
-}
+} */
 
-.link-pages {
+/* .link-pages {
     background-color: red;
     height: 90px;
-}
+} */
 
-.playlist {
+/* .playlist {
     background-color: aqua;
-}
+} */
 
-.account {
+/* .account {
     background-color: beige;
     height: 60px;
-}
+} */
 /*-------------------
     TYPO
 -------------------*/
@@ -72,30 +72,115 @@ main {
     display: flex;
 }
 
+/* sidebar  */
 main .sidebar {
     height: 100%;
     width: 230px;
     background-color: black;
     z-index: 3;
     flex-shrink: 0;
-    padding: 20px 20px 5px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: #a3a3a3;
+    font-size: small;
+    font-weight: 500;
 }
 
+.sidebar > div {
+    padding: 0 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    height: 35px;
+    width: 100%;
+}
+
+.sidebar i {
+    margin-right: 5px;
+}
+
+/* logo  */
 .sidebar .logo {
     height: 50px;
+    margin-top: 20px;
 }
 
-.sidebar .playlist {
-    flex-grow: 1;
+.logo img {
+    height: 100%;
+}
+/* /logo  */
+
+/* pages  */
+.sidebar .pages-links {
+    padding: 0;
+}
+
+.nav-pages li {
+    padding-left: 20px;
+}
+
+.nav-pages i {
+    font-size: 20px;
+    vertical-align: middle;
+    width: 23px;
+}
+/* /pages  */
+
+/* playlist  */
+.playlist h3 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.playlist .create-playlist {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.create-playlist i {
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+.playlist-nav {
     overflow-y: auto;
+    flex-grow: 1;
+}
+/* /playlist  */
+
+/* account  */
+.sidebar .account {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 5px 20px;
 }
 
+.account .user-account {
+    color: white;
+}
+
+.user-account i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+/* /account  */
+
+/* main sections  */
 main .main-sections {
     overflow-y: auto;
 }
+
+/* /main sections  */
+
 /*-------------------
     FOOTER
 -------------------*/
