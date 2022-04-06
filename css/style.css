@@ -62,14 +62,14 @@ main .sidebar {
     background-color: black;
     z-index: 3;
     flex-shrink: 0;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 5px 20px;
     display: flex;
     flex-direction: column;
-    gap: ;
+    gap: 20px;
 }
 
 .sidebar .logo {
-    height: 90px;
+    height: 50px;
 }
 
 .sidebar .playlist {
