@@ -344,3 +344,18 @@ footer {
     }
 }
 
+@media screen and (max-width: 700px) {
+    /* main */
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
+    /* footer  */
+    .footer-left img {
+        width: 20%;
+        object-fit: contain;
+        vertical-align: middle;
+    }
+    .add-to-library {
+        margin-left: 25px;
+    }
+}
