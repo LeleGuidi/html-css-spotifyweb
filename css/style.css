@@ -359,3 +359,56 @@ footer {
         margin-left: 25px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    /* main  */
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
+    /* footer  */
+    .add-to-library {
+        margin-left: 15px;
+    }
+    /* sidebar  */
+    main .sidebar {
+        width: 50px;
+        padding: 5px 10px;
+        flex-shrink: 1;
+        align-items: center;
+    }
+    .sidebar .xs-view {
+        display: block;
+        width: 25px;
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
+    .sidebar .account {
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+    .account .xs-view.install {
+        width: 15px;
+        transform:translateX(-1px);
+    }
+    .account .xs-view.profile {
+        width: 18px;
+        vertical-align: middle;
+        background-color: #808080;
+        border-radius: 50%;
+        fill: white;
+    }
+    .sidebar .nav-pages ul, 
+    .playlist, 
+    .playlist-nav, 
+    .sidebar hr, 
+    .sidebar .install-app, 
+    .sidebar .user-account,
+    .sidebar .logo {
+        display: none;
+    }
+
+    .sidebar .pages-links {
+        flex-grow: 1;
+    }
+}
