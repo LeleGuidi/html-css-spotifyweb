@@ -231,8 +231,24 @@ section h1 {
     text-align: center;
     position: relative;
 }
+.card .shadow {
+    background-color: black;
+    position: relative;
+    /* per rimuovere i misteriosi 4px dell'immagine  */
+    font-size: 0px;
+}
 .card img {
     width: 100%;
+    display: inline;
+}
+.shadow .play-button-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    color: white;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 .card h4 {
     margin: 5px 0;
@@ -462,6 +478,9 @@ i:hover,
 .bar:hover .current-bar i {
     display: block;
 }
-div.card:hover .card img {
-    box-shadow: inset 0 0 0 1000 rgba(0, 0, 0, 0.5);
+.card:hover img {
+    opacity: 0.7;
+}
+.card:hover .play-button-img {
+    display: block;
 }
